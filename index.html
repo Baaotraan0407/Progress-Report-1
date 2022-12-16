@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="background.css">
+	<div class="spotify">
+		<iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7GTqMQDhOum?utm_source=generator&theme=0" 
+		width="350" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+		loading="lazy"></iframe>
+	</div>
+	
+</head>
+<body style ="background-image:url('06.png');">
+
+<div>
+
+	<section>
+		<video id ="slider1" muted loop autoplay>
+			<source src="Spirited Away - An AMV Tribute (online-video-cutter.com).mp4" type ="video0/mp4">
+			<source src="video1.mp4" type="video1/mp4">
+			<source src="video2.mp4" type="video2/mp4">
+			<source src="video3.mp4" type="video3/mp4">
+			
+		</video> 
+		 
+		
+		<ul class ="navigation1">
+			<li onclick="videoUrl('Spirited Away - An AMV Tribute (online-video-cutter.com).mp4')"> <img src="chihiro042.jpg"></li>
+			<li onclick="videoUrl('video1.mp4')"> <img src="18.png"></li>
+			<li onclick="videoUrl('video2.mp4')"> <img src="44.png"></li>
+			<li onclick="videoUrl('video3.mp4')"> <img src="howl016.jpg"></li>
+			
+		</ul>
+		
+ 
+	</section>
+	<script>
+		function videoUrl (hmmmmmm){
+			document.getElementById ("slider1").src = hmmmmmm; 
+		}
+	</script>
+	</div>
+
+	<div>
+	<div class="box-menu">
+		<div class="wrapper">
+			<div class="Hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+		    </div>
+		</div>
+	
+		
+		<div class="menu">
+			<a href="menu.html" class="active"><span class="icon fa fa-home"></span> <span class="text">Home</span></a>
+            <a href="#"><span class="icon fa fa-clock-o"></span> <span class="text">Timer</span></a>
+			<a href="#"><span class="icon fa fa-sticky-note"></span> <span class="text">Note</span></a>
+			<a href="https://www.google.com" target="_blank"><span class="icon fa fa-search"></span> <span class="text">Search</span></a>
+			<a href="#"><span class="icon fa fa-spotify"></span> <span class="text">Spotify</span></a>
+            <a href="#"><span class="icon fa fa-youtube-play"></span> <span class="text">Youtube</span></a>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	 
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('.box-menu .wrapper').on('click', function(){
+				$('.box-menu').toggleClass('full-menu');
+				$('.Hamburger').toggleClass('active');
+			})
+			('a').on('click', function(){
+				$(this).siblings('a').removeClass('active');
+				$(this).addClass('active');
+			})
+		});
+		
+	</script>
+	</div>
+	<div class="spotify">
+		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7GTqMQDhOum?utm_source=generator&theme=0" 
+		width="350" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+		loading="lazy"></iframe>
+	</div>
+	
+
+</body>
+
+		
+</html>
